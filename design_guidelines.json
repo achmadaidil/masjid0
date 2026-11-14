@@ -1,0 +1,281 @@
+{
+  "theme_archetype": "ARCHETYPE 1: ORGANIC & EARTHY (Classic Islamic Emerald, Cream & Warm Gold)",
+  "language_and_locale": {
+    "language": "id-ID (Bahasa Indonesia)",
+    "currency_format": "Rp #.### (Indonesian Rupiah with dot separator, e.g., Rp 50.000.000)",
+    "date_format": "EEEE, d MMMM yyyy (e.g., Sabtu, 28 Maret 2026)",
+    "time_format": "HH:mm WIB (e.g., 08:30 WIB)",
+    "mobile_first": true
+  },
+  "typography": {
+    "heading_font": "Lora Variable, serif",
+    "body_font": "Plus Jakarta Sans Variable, sans-serif",
+    "font_imports": [
+      "@import \"@fontsource-variable/lora\";",
+      "@import \"@fontsource-variable/plus-jakarta-sans\";"
+    ],
+    "scale_px": {
+      "display": 52,
+      "h1": 40,
+      "h2": 30,
+      "h3": 22,
+      "body": 16,
+      "caption": 14
+    },
+    "hierarchy_rules": {
+      "h1": "font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-emerald-950",
+      "h2": "font-serif text-2xl sm:text-3xl font-semibold tracking-tight text-emerald-900",
+      "h3": "font-serif text-xl sm:text-2xl font-semibold text-emerald-900",
+      "h4": "font-sans text-lg sm:text-xl font-semibold text-emerald-900",
+      "body": "font-sans text-base leading-relaxed text-stone-700",
+      "caption": "font-sans text-sm text-stone-500",
+      "arabic_calligraphy_subtext": "font-serif italic text-amber-700 tracking-wide"
+    }
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#F9F8F3",
+        "on_bg": "#142B23",
+        "on_bg_muted": "#4B5B53",
+        "roles": {
+          "link": "#135438",
+          "error": "#9E1C1C",
+          "success": "#156F43",
+          "gold_accent": "#8A6615"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#142B23",
+        "on_bg_muted": "#52635B",
+        "roles": {
+          "border": "#E5E1D5",
+          "link": "#135438",
+          "error": "#9E1C1C",
+          "success": "#156F43"
+        }
+      },
+      {
+        "name": "card_subtle",
+        "kind": "solid",
+        "bg": "#F0EFE6",
+        "on_bg": "#142B23",
+        "on_bg_muted": "#52635B"
+      },
+      {
+        "name": "dark_emerald_hero",
+        "kind": "image",
+        "contrast_against": "#081E17",
+        "guarantee": "scrim: linear-gradient(135deg, rgba(8,30,23,0.92) 0%, rgba(13,49,38,0.85) 60%, rgba(19,84,56,0.75) 100%)",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#D6E4DE",
+        "roles": {
+          "gold_highlight": "#F3CE72",
+          "link": "#F3CE72",
+          "badge_bg": "#135438",
+          "badge_text": "#F9F8F3"
+        }
+      },
+      {
+        "name": "footer_surface",
+        "kind": "solid",
+        "bg": "#092119",
+        "on_bg": "#F9F8F3",
+        "on_bg_muted": "#A2BEB2",
+        "roles": {
+          "gold_accent": "#F3CE72",
+          "link": "#6EE7B7"
+        }
+      },
+      {
+        "name": "admin_sidebar",
+        "kind": "solid",
+        "bg": "#0D2E24",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#A2BEB2",
+        "roles": {
+          "active_item_bg": "#1A5242",
+          "gold_accent": "#F3CE72"
+        }
+      },
+      {
+        "name": "whatsapp_floating_badge",
+        "kind": "solid",
+        "bg": "#25D366",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#E0FFE9"
+      },
+      {
+        "name": "donation_progress_container",
+        "kind": "solid",
+        "bg": "#EAE7DC",
+        "on_bg": "#142B23",
+        "on_bg_muted": "#52635B"
+      }
+    ],
+    "accent": "#C4973B",
+    "on_accent": "#FFFFFF",
+    "brand_palette": {
+      "emerald_dark": "#0D2E24",
+      "emerald_primary": "#135438",
+      "emerald_light": "#E9F5EF",
+      "gold_primary": "#C4973B",
+      "gold_light": "#FBF5E8",
+      "gold_dark": "#8A6615",
+      "parchment_bg": "#F9F8F3",
+      "stone_border": "#E5E1D5"
+    }
+  },
+  "entry_surfaces": {
+    "/": "Islamic arched hero banner with mosque photography scrim, prayer timetable/upcoming highlight bar, seeded activity grid below",
+    "/events": "Filterable events catalog with category pills (Kajian, Sosial, Donasi, Pelatihan, Peringatan Hari Besar), search bar and status cards",
+    "/events/:id": "Editorial split detail view: rich event itinerary & donation progress on left/top, interactive registration form in bordered parchment panel on right",
+    "/login": "Branded split auth: Islamic geometric pattern & bismillah greeting panel left, secure admin credential form right",
+    "/admin": "Emerald tactical admin command center: KPI summary cards, event table with donation progress updater modal, and quick registration drawer",
+    "/admin/settings": "Admin settings panel for updating global WhatsApp contact (08170223635), mosque profile & bank transfer details"
+  },
+  "image_urls": {
+    "hero_mosque": {
+      "url": "https://images.unsplash.com/photo-1590075865003-e48277faa558?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwzfHxtb3NxdWUlMjBhcmNoaXRlY3R1cmUlMjBncmFuZHxlbnwwfHx8fDE3OTQ2MTAwMjF8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Grand Mosque White Domes and Floral Archways",
+      "category": "Hero Background / Public Home Banner",
+      "description": "Used as the main hero background banner with a deep emerald gradient scrim for the public landing page"
+    },
+    "aerial_mosque_night": {
+      "url": "https://images.unsplash.com/photo-1537181534458-45dcee76ae90?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxtb3NxdWUlMjBhcmNoaXRlY3R1cmUlMjBncmFuZHxlbnwwfHx8fDE3OTQ2MTAwMjF8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Illuminated Grand Mosque Architecture",
+      "category": "Event Default / Peringatan Hari Besar Islam",
+      "description": "Featured thumbnail for major Islamic ceremonies, Tabligh Akbar, and evening events"
+    },
+    "study_gathering_kajian": {
+      "url": "https://images.unsplash.com/photo-1574246604907-db69e30ddb97?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwxfHxpc2xhbWljJTIwZXZlbnQlMjBzdHVkeSUyMGdhdGhlcmluZ3xlbnwwfHx8fDE3OTQ2MTAwMjF8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Congregation Gathering Inside Mosque Mihrab",
+      "category": "Kajian Rutin / Majelis Taklim Event Image",
+      "description": "Visual header for weekly study sessions, tafsir lectures, and congregation events"
+    },
+    "community_charity": {
+      "url": "https://images.unsplash.com/photo-1655438806765-d70d1443dfa9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxtdXNsaW0lMjBjb21tdW5pdHklMjBjaGFyaXR5JTIwcHJheXxlbnwwfHx8fDE3OTQ2MTAwMjB8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Open Hands in Prayer and Giving",
+      "category": "Donasi & Santunan / Program Kebaikan",
+      "description": "Thumbnail for donation campaigns, santunan anak yatim, and zakat/infaq drives"
+    },
+    "children_quran_class": {
+      "url": "https://images.unsplash.com/photo-1629273229664-11fabc0becc0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHw0fHxpc2xhbWljJTIwZXZlbnQlMjBzdHVkeSUyMGdhdGhlcmluZ3xlbnwwfHx8fDE3OTQ2MTAwMjF8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Students learning Al-Quran in mosque",
+      "category": "TPQ & Remaja Masjid Activities",
+      "description": "Card visual for youth tahsin, Islamic education classes, and training events"
+    }
+  },
+  "component_structure": {
+    "global_whatsapp_button": {
+      "path": "frontend/src/components/WhatsAppFloatingButton.tsx",
+      "features": [
+        "Fixed bottom-right floating pill (bottom-6 right-6 z-50)",
+        "Direct wa.me link to target phone number (default 08170223635 / dynamic from settings)",
+        "Formatted Indonesian greeting text generator: 'Assalamu'alaikum Admin Masjid Kita, saya ingin bertanya tentang kegiatan...'",
+        "Green WhatsApp pill (#25D366) with subtle pulse animation and quick tooltip/badge",
+        "Includes data-testid='floating-whatsapp-btn'"
+      ]
+    },
+    "navigation_header": {
+      "path": "frontend/src/components/Navbar.tsx",
+      "features": [
+        "Glassmorphism crystal emerald/cream background (bg-white/90 backdrop-blur-md border-b border-stone-200)",
+        "Brand mark with subtle Islamic crescent/dome icon + 'Masjid Kita'",
+        "Links: Beranda (/), Ragam Kegiatan (/events), Program Donasi (/events?category=Donasi), Kontak Kami (#kontak), Panel Takmir (/admin)",
+        "Direct CTA: 'Tanya Takmir (WA)' leading to WhatsApp link",
+        "Responsive mobile drawer via shadcn Sheet with full navigation items"
+      ]
+    },
+    "event_card": {
+      "path": "frontend/src/components/EventCard.tsx",
+      "features": [
+        "Card with 14px rounded corners (rounded-2xl) and subtle gold-tinted shadow",
+        "Category badge with distinct color (Kajian: Emerald, Donasi: Amber/Gold, Sosial: Blue-slate, Pelatihan: Teal)",
+        "Date & time formatted in Indonesian (e.g. Ahad, 5 April 2026 • 08:30 WIB)",
+        "Location badge (e.g. Ruang Utama Masjid Kita)",
+        "Donation Progress Bar (if event.type === 'DONATION' or category === 'Donasi'): shows Rp target, collected amount, and percentage bar",
+        "Action CTA button: 'Daftar Sekarang' or 'Salurkan Donasi' routing to /events/:id"
+      ]
+    },
+    "donation_progress_bar": {
+      "path": "frontend/src/components/DonationProgressBar.tsx",
+      "features": [
+        "Progress bar with animated emerald/gold fill (bg-gradient-to-r from-emerald-600 to-amber-500)",
+        "Clear metric display: Terkumpul (Rp X.XXX.XXX) vs Target (Rp Y.YYY.YYY)",
+        "Calculated percentage pill with badge (e.g. '78% Tercapai')",
+        "Total Donatur / Pendaftar count badge",
+        "Bank transfer / QRIS info collapse helper for instant offline/online transfer"
+      ]
+    },
+    "registration_form": {
+      "path": "frontend/src/components/EventRegistrationForm.tsx",
+      "features": [
+        "Card container styled like an illuminated certificate/parchment panel (border border-amber-200/60 bg-[#FDFCF7] shadow-sm p-6 sm:p-8 rounded-2xl)",
+        "Form fields required by user: Nama Lengkap (Input), Nomor WhatsApp (Input with +62 / 08 mask helper), Alamat Lengkap (Textarea), Catatan / Doa / Harapan (Textarea)",
+        "Quick 'Konfirmasi Otomatis ke WhatsApp' toggle or direct notification confirmation banner",
+        "Instant validation with Sonner toast on submission and success modal with confirmation ticket code",
+        "Direct link to notify admin via WhatsApp upon registration completion",
+        "Full test IDs: data-testid='register-name-input', data-testid='register-wa-input', data-testid='register-address-input', data-testid='register-notes-input', data-testid='register-submit-btn'"
+      ]
+    },
+    "admin_dashboard": {
+      "path": "frontend/src/pages/AdminDashboard.tsx",
+      "features": [
+        "High-density admin command center with Islamic green sidebar (#0D2E24)",
+        "Metric tiles: Total Kegiatan, Total Pendaftar, Total Dana Donasi Terkumpul, Pesan Masuk",
+        "Event CRUD management table with filter by category and status (Draft / Aktif / Selesai)",
+        "Quick Action Modal: 'Update Donasi Terkumpul' (allows admin to update live collected amount with 1-click recalculation)",
+        "Registrations Viewer Drawer / Modal per event: displays registrant list with instant 'Chat WhatsApp' button for every registered user",
+        "Event Creator Modal with type switcher (Kegiatan Umum vs Penggalangan Donasi with Target & Nominal Saat Ini)"
+      ]
+    }
+  },
+  "layout_and_grids": {
+    "public_home": {
+      "hero_section": "Deep emerald immersive banner with Islamic subtle geometric pattern overlay, bold headline, subtext, prayer times ticker, and quick search",
+      "highlight_grid": "3-column responsive grid (grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8) showing upcoming featured activities",
+      "donation_spotlight": "2-column asymmetric split highlighting active donation projects with live progress bars and bank account copy buttons",
+      "jadwal_kajian_weekly": "Tabbed timetable or calendar view of weekly recurring majelis taklim",
+      "faq_and_contact": "Accordion FAQ for event attendance etiquette + Google Maps & Mosque profile footer"
+    },
+    "admin_panel": {
+      "sidebar_layout": "Fixed 64-72px icon + title on desktop, mobile slide-over sheet drawer",
+      "kpi_grid": "grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6",
+      "content_card": "bg-white border border-stone-200 rounded-xl p-6 shadow-sm"
+    }
+  },
+  "motion_and_interactions": {
+    "principles": [
+      "Subtle, dignified transitions appropriate for a sacred community website",
+      "Hover lift on event cards: transform translateY(-4px) with transition-transform duration-200",
+      "Smooth accordion open/close for prayer times & bank account details",
+      "Progress bar animated fill on scroll entry using CSS transition width 1s ease-out",
+      "Sonner toast notifications on form submission and copy-to-clipboard interactions",
+      "Respect prefers-reduced-motion: disable floating pulse and card lift when user requests reduced motion"
+    ]
+  },
+  "accessibility_and_compliance": {
+    "wcag_level": "WCAG AA (minimum 4.5:1 text contrast for all copy against surfaces)",
+    "mobile_touch_targets": "All buttons, pills, and inputs minimum 44px by 44px for easy thumb tapping",
+    "form_accessibility": "Explicit Label bindings with htmlFor for all form inputs (Nama, WhatsApp, Alamat, Catatan)",
+    "aria_labels": "Clear aria-label on icon buttons, floating WhatsApp action, and modal close buttons",
+    "color_blind_safety": "Progress bars use high-contrast text metrics beside the colored bar so color alone is never the only indicator"
+  },
+  "instructions_to_main_agent": [
+    "1. IMPLEMENTATION STACK: Use React 19 + Tailwind v4 + shadcn/ui components (located in frontend/src/components/ui/) with FastAPI + MongoDB backend.",
+    "2. THEME SETUP: In `frontend/src/index.css`, import `@fontsource-variable/lora` and `@fontsource-variable/plus-jakarta-sans`. Set `--font-heading: 'Lora Variable', serif` and `--font-sans: 'Plus Jakarta Sans Variable', sans-serif`. Use rich classic Islamic green tokens (#0D2E24, #135438, #F9F8F3, #C4973B).",
+    "3. GLOBAL WHATSAPP FLOATING BUTTON: Mount `<WhatsAppFloatingButton phone='08170223635' />` in `App.tsx` outside `<Routes>` so it floats consistently across ALL pages (Home, Events, Event Detail, Login, Admin). Clicking it opens WhatsApp (`https://wa.me/628170223635?text=...`) with pre-filled respectful greeting.",
+    "4. EVENT REGISTRATION FIELDS: The registration form on `/events/:id` MUST collect all 4 required fields: `nama` (Nama Lengkap), `nomor_wa` (Nomor WhatsApp), `alamat` (Alamat / Domisili), and `catatan` (Catatan / Doa / Jumlah Peserta). Save to backend and show clear instant confirmation modal/toast.",
+    "5. DONATION PROGRESS BAR: When an event has type='DONATION' or category='Donasi', show target amount (`target_dana`), collected amount (`dana_terkumpul`), donor count, and an interactive progress bar. In the Admin Dashboard, provide a quick modal/button to update `dana_terkumpul` dynamically.",
+    "6. ADMIN PANEL WITH AUTH: Build `/admin/login` and `/admin` dashboard. The admin can: (a) Add/Edit/Delete events, (b) Toggle Publish/Draft status, (c) View and export list of registered participants per event with direct 'Hubungi via WA' link, (d) Update collected donation funds, (e) Change settings (such as active mosque WhatsApp number and bank account for donations). Seed admin credentials: username `admin`, password `admin123`.",
+    "7. SEED DATA: Provide rich Indonesian realistic events in `backend/seed.py`: e.g., 'Kajian Subuh Berkah', 'Peringatan Nuzulul Qur'an & Tabligh Akbar', 'Wakaf Karpet & Renovasi Tempat Wudhu' (Donasi type), 'Santunan 100 Anak Yatim & Dhuafa' (Donasi type), 'Pelatihan Tahsin & Bahasa Arab Intensif', 'Bazar UMKM Ramadhan Masjid Kita'.",
+    "8. INDONESIAN LOCALE: Ensure all dates are rendered in Indonesian (e.g. 'Ahad, 15 Ramadhan 1447 H / 5 April 2026') and currency in Rupiah format (`Rp 25.000.000`).",
+    "9. TEST IDS: Include explicit `data-testid` on all buttons, forms, links, search filters, and table rows to guarantee 100% test pass rate."
+  ]
+}
